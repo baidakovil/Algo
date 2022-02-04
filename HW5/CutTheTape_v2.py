@@ -19,8 +19,7 @@ def cut_the_tape(n, a, b, c):
             mlt[0] = max(0, mlt[0] - 1)
             rest = n - abc[0] * mlt[0] - abc[1] * mlt[1] - abc[2] * mlt[2]
             if rest >= abc[1]:
-                else:
-                    mlt[1] += 1
+                mlt[1] += 1
             rest = n - abc[0] * mlt[0] - abc[1] * mlt[1] - abc[2] * mlt[2]
     return sum(mlt)
 
